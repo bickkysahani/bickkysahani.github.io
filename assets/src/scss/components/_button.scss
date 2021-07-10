@@ -1,0 +1,95 @@
+.btn-primary {
+  padding: 0.8rem 3.8rem;
+  color: var(--darkblue);
+  border-radius: 5rem;
+  border: 2px solid var(--lightblue);
+  background: var(--lightblue);
+  box-sizing: border-box;
+  transition: all .2s;
+  &:hover {
+    color: var(--darkblue);
+    background: #1fa8de;
+    border: 2px solid #1fa8de;
+    transform: translateY(-3px);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:focus, &:active, {
+    box-shadow: none !important;
+    color: var(--darkblue);
+    background: #1fa8de;
+    border: 2px solid #1fa8de;
+    outline: none;
+    transform: translateY(-1px);
+  }
+}
+.btn-primary-outline {
+  padding: 0.8rem 3.8rem;
+  color: var(--lightblue);
+  border-radius: 5rem;
+  border: 2px solid var(--lightblue);
+  background: var(--w);
+  box-sizing: border-box;
+
+  &:hover {
+    color: var(--darkblue);
+    background: var(--lightblue);
+  }
+
+  &:focus {
+    box-shadow: none !important;
+    color: var(--darkblue);
+    background: var(--lightblue);
+  }
+}
+.btn-secondary {
+  padding: 0.8rem 3.8rem;
+  color: var(--w);
+  border-radius: 5rem;
+  border: 2px solid var(--darkblue);
+  background: var(--darkblue);
+  box-sizing: border-box;
+
+  &:hover {
+    color: var(--w);
+    background: #001533;
+    border: 2px solid #001533;
+  }
+  &:focus {
+    box-shadow: none !important;
+    color: var(--w);
+    background: #001533;
+    border: 2px solid #001533;
+  }
+}
+.btn-link {
+  text-decoration: none;
+  color: var(--lightblue);
+  &:hover {
+    color: var(--lightblue);
+    // border-bottom: 1px solid var(--lightblue);
+    text-decoration: underline;
+  }
+  &:focus {
+    box-shadow: none !important;
+    color: var(--lightblue);
+    // border-bottom: 1px solid var(--lightblue);
+    text-decoration: underline;
+  }
+}
+.btn-rounded {
+  background: var(--lightblue);
+  border-radius: 50%;
+  padding: 1.8rem;
+
+  &:hover {
+    background: #1fa8de;
+  }
+  &:focus {
+    box-shadow: none !important;
+    background: #1fa8de;
+  }
+}
