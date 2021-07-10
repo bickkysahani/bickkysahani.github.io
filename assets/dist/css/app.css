@@ -22603,12 +22603,13 @@ svg {
   font-size: clamp(40px, 8vw, 80px);
   margin-top: var(--fz-sm);
   color: var(--slate);
-  line-height: 0.9;
+  line-height: 1;
 }
 
 @media (max-width: 991.98px) {
   .hero h3, .hero .h3 {
     max-width: 15ch;
+    line-height: 1.1;
   }
 }
 

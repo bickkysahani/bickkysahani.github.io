@@ -23,9 +23,10 @@
     font-size: clamp(40px, 8vw, 80px);
     margin-top: var(--fz-sm);
     color: var(--slate);
-    line-height: 0.9;
+    line-height: 1;
     @include media-breakpoint-down(lg){
       max-width: 15ch;
+      line-height: 1.1;
     }
   }
   p {
