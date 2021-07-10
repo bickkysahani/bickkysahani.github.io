@@ -3,15 +3,14 @@
 - `npm install --global gulp-cli`
 - might have to use sudo 
 - `npm install --global gulp-cli`
+# Install live-server
+- `npm install --global live-server`
 
 
 # Project Installation
-- `cd work-directory`
-- `git clone https://github.com/laakhe/beautyandnails.com.au.git`
-- `cd beautyandnails.com.au`
+- `git clone https://github.com/bickkysahani.github.io.git`
+- `cd bickkysahani.github.io`
 - `npm install`
-
-
 
 
 ## Building/Watching assets
@@ -21,8 +20,8 @@
 
 
 ## Styling
-Everything will have to be built using components. Components should be placed under the `/components` directory and imported within `app.scss` file. 
-- buttons.scss
+Everything will have to be built using components. Components should be placed under the `/scss` directory and imported within `app.scss` file. 
+- nav.scss
 
 
 ## JavaScript
@@ -36,6 +35,6 @@ Any custom scripts should be placed into `scripts.js` file.
 
 
 ## Running Locally
-- Go to your local project folder ` cd beautyandnails.com.au`, if installed as a theme inside wordpress, go to `wp-content/themes/PROJECT_NAME/`
-- run `php -s localhost:8005`
-- visit http://localhost:8005/html
+- Go to your local project folder ` cd bickkysahani.github.io`
+- run `live-server`
+- visit http://127.0.0.1:8080/html/index.html
