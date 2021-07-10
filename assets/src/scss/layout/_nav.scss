@@ -1,6 +1,10 @@
+.add-shadow{
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+}
+
+
 .navbar {
  padding: var(--fz-lg) 0;
-//  box-shadow: 0 10px 30px -10px var(--navy-shadow);
 background-color: var(--navy);
   &-brand{
     width: 4%;

@@ -22311,6 +22311,10 @@ ____________________________________________________________*/
   }
 }
 
+.add-shadow {
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+}
+
 .navbar {
   padding: var(--fz-lg) 0;
   background-color: var(--navy);
@@ -22626,6 +22630,12 @@ svg {
   cursor: pointer;
   transition: var(--transition);
   margin-top: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .hero .email-link {
+    margin-bottom: 50px;
+  }
 }
 
 .hero .email-link:hover, .hero .email-link:active {

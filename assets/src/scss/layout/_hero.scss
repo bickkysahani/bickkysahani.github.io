@@ -45,6 +45,10 @@
     cursor: pointer;
     transition: var(--transition);
     margin-top: 50px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    
     &:hover,
     &:active {
       background-color: var(--green-tint);

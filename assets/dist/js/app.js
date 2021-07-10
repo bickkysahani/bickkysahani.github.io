@@ -23649,3 +23649,37 @@ var illustrationBlob = createBlob({
 	minDuration: 2,
 	maxDuration: 2
 });
+
+// $(window).scroll(function(){
+//     if ($(window).scrollTop() >= 30) {
+//        $('.navbar').addClass('nav-shadow');
+//     }
+//     else {
+//        $('.navbar').removeClass('nav-shadow');
+//     }
+// });
+
+// const navShadow = () => {
+//     var nav = document.getElementById("nav");
+//     var sticky = nav.offsetTop;
+
+//     if (window.pageYOffset > sticky) {
+//       nav.classList.add("nav-shadow");
+//     } else {
+//       nav.classList.remove("nav-shadow");
+//     }
+//   };
+
+//   window.addEventListener("scroll", navShadow);
+
+
+
+
+  window.addEventListener('scroll',(e)=>{
+	const nav1 = document.querySelector('.nav');
+	if(window.pageYOffset>0){
+	  nav1.classList.add("add-shadow");
+	}else{
+	  nav1.classList.remove("add-shadow");
+	}
+  });
