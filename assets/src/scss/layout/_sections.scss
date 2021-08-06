@@ -1,457 +1,53 @@
-.why_choose_us {
-  margin: 6.8rem 0;
-
-  h2 {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
+.skills {
+  margin: 4.8rem 0;
+  h2{
+    font-size: clamp(28px,8vw,43px);
+    max-width: 29ch;
+    // margin: 0 auto;
+    // text-align:center;
   }
   .row {
     margin: 4.8rem 0;
-  }
-  .col {
-    margin-bottom: 1.8rem;
-  }
-}
+    --bs-gutter-x: 0rem;  
+    flex-direction: row;
+    
+    h3{
+      color:var(--slate);
+      font-size: 2rem;
 
-.popular_packages {
-  margin: 6.8rem 0;
-  .row {
-    margin: 4.8rem 0;
-    .col {
-      margin-bottom: 2.8rem;
     }
-  }
-  h2 {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-}
-
-.webnet {
-  margin: 6.8rem 0;
-  h2 {
-    max-width: 25ch;
-  }
-  .row {
-    .col {
-      .row {
-        margin: 4.8rem 0;
-        p {
-          // max-width: 40ch;
-        }
+    .col{
+      margin-bottom: 4.8rem;
+      img{
+        width:80%;
       }
     }
-  }
-  .col:last-child {
-    // text-align: end;
-    @include media-breakpoint-down(lg) {
-      text-align: center;
-    }
-  }
-
-  .speed {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 1.6rem;
-    &_div {
-      font-size: 6.4rem;
-      line-height: 6.4rem;
-      color: var(--lightblue);
-      position: relative;
-      .icon {
-        position: absolute;
-        top: 1.6rem;
-        left: 1.6rem;
-      }
-    }
-    margin-bottom: 1.6rem;
-  }
-  h2 {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-}
-
-.testimonials {
-  margin: 6.8rem 0;
-  .row {
-    margin: 4.8rem 0 12rem 0;
-    .col1 {
-      @include media-breakpoint-down(sm) {
-        text-align: center;
-      }
-      h2 {
-        max-width: 18ch;
-      }
-      p {
-        max-width: 24ch;
-        @include media-breakpoint-down(sm) {
-          margin: 0 auto;
-        }
-      }
-    }
-    .col:last-child {
-      @include media-breakpoint-down(lg) {
-        margin-top: 4.8rem;
-      }
-    }
-  }
-}
-
-.features {
-  .speed {
-    align-items: center;
-    h5 {
-      margin-top: 2rem;
-    }
-
-    &_div {
-      position: relative;
-      .icon {
-        position: absolute;
-        top: 1.6rem;
-        left: 1.6rem;
-      }
-    }
-  }
-
-  @include media-breakpoint-down(lg) {
-    .col:last-child {
-      text-align: left;
-    }
-  }
-}
-
-.why_prabhutv {
-  .card_1 {
-    text-align: center;
-  }
-}
-
-.channels_slide {
-  padding: 4.8rem 0;
-
-  h2 {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-  .splide__pagination {
-    bottom: -4.8rem;
-  }
-}
-
-#channels-slider {
-  margin: 6.8rem 0;
-}
-
-.about_us {
-  margin: 6.8rem 0;
-  h2 {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-  .row {
-    margin: 4.8rem 0;
-
-    p {
-      margin-bottom: 2rem;
-      max-width: 50ch;
-    }
-
-    .col:last-child {
-      text-align: center;
-      @include media-breakpoint-down(lg) {
-        text-align: center;
-      }
-    }
-  }
-}
-
-.timeline {
-  h2,
-  p {
-    max-width: 46ch;
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-  &_row {
-    margin: 6.8rem 0;
-  }
-  .row {
-    // margin: 4.8rem 0;
-    .col:first-child {
-      border-right: 2px solid var(--stroke);
-      @include media-breakpoint-down(lg) {
-        border-right: none;
-      }
-    }
-    .col:last-child {
-      margin-top: 10.8rem;
-      @include media-breakpoint-down(lg) {
-        margin-top: 0rem;
-      }
-    }
-  }
-  &_card {
-    padding: 6.8rem;
-    @include media-breakpoint-down(sm) {
-      padding: 4.8rem 0;
-    }
-    &_content {
-      display: flex;
-      gap: 1.6rem;
-      align-items: baseline;
-      margin-bottom: 1.6rem;
-      @include media-breakpoint-down(sm) {
-        display: block;
-        text-align: center;
-      }
-      .speed_div {
-        position: relative;
-        .icon {
-          position: absolute;
-          top: 1rem;
-          left: 1.8rem;
-        }
-      }
-    }
-  }
-  p {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-}
-
-.branch_locator {
-  margin: 6.8rem 0;
-  .row {
-  }
-  .map {
-    margin: 4.8rem 0;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.coverage_area {
-  margin: 6.8rem 0;
-  .row {
-  }
-  .map {
-    margin: 6.8rem 0;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.faqs {
-  margin: 6.8rem 0;
-  .row {
-    h2 {
-      @include media-breakpoint-down(sm) {
-        text-align: center;
-      }
-    }
-  }
-  .accordion {
-    margin: 4.8rem 0;
-  }
-}
-
-.payment_partner {
-  margin: 6.8rem 0;
-  h2,
-  p {
-    max-width: 55ch;
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-      max-width: 35ch;
-      margin: 1.6rem auto 0 auto;
-    }
-  }
-  .row {
-    .col {
-    }
-    .payment_card {
-      height: 100%;
-      padding: 4.8rem;
-      text-align: center;
-      img {
-        // margin-bottom: 0.8rem;
-      }
-    }
-  }
-}
-
-.bank_deposit {
-  margin: 6.8rem 0;
-  h2,
-  p {
-    max-width: 55ch;
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-      max-width: 35ch;
-      margin: 1.6rem auto 0 auto;
-    }
-  }
-  .row {
-    margin: 4.8rem 0;
-    .col {
-    }
-    .bank_card {
-      height: 100%;
-      padding: 2.8rem;
-      border-radius: 1.2rem;
-      border: 1px solid var(--stroke);
-
-      img {
-        margin-bottom: 2.4rem;
-      }
-      p {
-        margin-bottom: 1.6rem;
-        text-align: left;
-      }
-    }
-  }
-}
-.contact_map {
-  margin: 6.8rem 0;
-  .row2 {
-    margin: 4.8rem 0 10rem 0rem;
-  }
-  .map {
-    img {
-      width: 100%;
-    }
-    iframe {
-      width: 100%;
-      height: 50vh;
-    }
-  }
-
-  .contact_info_card {
-    height: 100%;
-    padding: 4.8rem 2.8rem;
-
-    border-radius: 1.2rem;
-    border: 1px solid var(--stroke);
-    h2 {
-      margin-bottom: 3.3rem;
-    }
-    p {
-      margin-bottom: 2.4rem;
-    }
-
-    .social {
+    ul {
       display: grid;
-      grid-template-columns: min-content min-content min-content;
-      grid-gap: 3rem;
-      margin-top: 12rem;
-    }
-  }
-
-  .contact_form {
-    padding: 4.8rem 4.8rem 0 4.8rem;
-    @include media-breakpoint-down(lg) {
-      padding: 4.8rem 2.8rem 0 2.8rem;
-    }
-    @include media-breakpoint-down(lg) {
-      padding: 4.8rem 1.8rem 0 1.8rem;
-    }
-    h2 {
-      margin-bottom: 3.3rem;
-    }
-  }
-}
-
-.career {
-  h2,
-  p {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-  margin: 6.8rem 0;
-  .row2 {
-    margin: 4.8rem 0 10rem 0rem;
-    .col-xl-3 {
-      h5 {
-        margin-bottom: 1.6rem;
-        padding-bottom: 1.6rem;
-        border-bottom: 1px solid var(--stroke);
-        @include media-breakpoint-down(sm) {
-          text-align: center;
-        }
-      }
-      div {
-        @include media-breakpoint-down(sm) {
-          text-align: center;
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+      padding: 0px;
+      margin: 20px 0px 20px;
+      overflow: hidden;
+      list-style: none;
+      padding-left: 1rem;
+      li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        font-family: var(--font-mono);
+        font-size: var(--fz-md);
+        &::before {
+          content: "▹";
+          position: absolute;
+          left: 0px;
+          color: var(--green);
+          font-size: var(--fz-sm);
+          line-height: 12px;
         }
       }
 
-      button {
-        border-radius: 1rem !important;
-        color: var(--w) !important;
-        text-transform: capitalize;
-        font-size: 1.6rem;
-        line-height: 2.4;
-        font-weight: 400;
-        padding: 1.6rem 3.8rem !important;
-      }
-    }
-
-    .col-xl-9 {
-      .contact_form {
-        padding: 0 4.8rem;
-        @include media-breakpoint-down(lg) {
-          padding: 4.8rem 2.8rem 0 2.8rem;
-        }
-        @include media-breakpoint-down(lg) {
-          padding: 4.8rem 1.8rem 0 1.8rem;
-        }
-        .row {
-          p {
-            margin-bottom: 4.8rem;
-          }
-          .cv {
-            // margin-bottom: 4.8rem;
-            p {
-              color: var(--lightblue);
-              font-size: 2.6 !important;
-              line-height: 2.4 !important;
-              font-weight: 600 !important;
-              text-transform: uppercase;
-              text-align: left;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.share_earn {
-  p {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-  }
-}
-
-.products {
-  .row {
-    .col:first-child {
-      @include media-breakpoint-down(lg) {
-        margin-bottom: 4.8rem;
+      img {
+        max-width: 100%;
       }
     }
   }
