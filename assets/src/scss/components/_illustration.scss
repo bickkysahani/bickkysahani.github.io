@@ -2606,9 +2606,19 @@ ____________________________________________________________*/
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
 	.illustration {
 		transform: translate(-50%, -50%) scale(.8);
+	}
+}
+@media screen and (max-width: 1366px) {
+	.illustration {
+		transform: translate(-50%, -50%) scale(.7);
+	}
+}
+@media screen and (max-width: 1024px) {
+	.illustration {
+		transform: translate(-50%, -50%) scale(.6);
 	}
 }
 @media screen and (max-width: 800px) {

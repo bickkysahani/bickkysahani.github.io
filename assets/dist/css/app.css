@@ -22294,9 +22294,21 @@ ____________________________________________________________*/
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   .illustration {
     transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .illustration {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .illustration {
+    transform: translate(-50%, -50%) scale(0.6);
   }
 }
 
@@ -22582,8 +22594,26 @@ svg {
   justify-content: center;
   -moz-box-align: center;
   flex-direction: column;
-  min-height: 88vh;
+  margin: 5rem 0;
   padding: 0px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .hero {
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero {
+    margin: 1rem 0;
+  }
 }
 
 .hero h1, .hero .h1 {

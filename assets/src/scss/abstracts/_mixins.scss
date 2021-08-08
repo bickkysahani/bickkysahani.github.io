@@ -1,0 +1,67 @@
+// respond is the name of your mixin
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==laptop-big {
+      @media only screen and (max-width: 1440px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==laptop {
+      @media only screen and (max-width: 1366px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==tablet-l {
+      @media only screen and (max-width: 1024px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==tablet {
+      @media only screen and (max-width: 768px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==mobile {
+      @media only screen and (max-width: 425px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==mobile-sm {
+      @media only screen and (max-width: 375px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==mobile-xs {
+      @media only screen and (max-width: 320px) {
+        @content;
+      }
+    }
+  }
+  
+  @include respond(laptop-big) {}
+  @include respond(laptop) {}
+  @include respond(tablet-l) {}
+  @include respond(tablet) {}
+  @include respond(mobile) {}
+  @include respond(mobile-sm) {}
+  @include respond(mobile-xs) {}
+  
+  // @media screen and (max-width: 1440px) {
+  // }
+  // @media screen and (max-width: 1366px) {
+  // }
+  // @media screen and (max-width: 1024px) {
+  // }
+  // @media screen and (max-width: 768px) {
+  // }
+  // @media screen and (max-width: 425px) {
+  // }
+  // @media screen and (max-width: 375px) {
+  // }
+  
